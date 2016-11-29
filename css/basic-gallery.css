@@ -21,18 +21,52 @@
   width: 100vw;
   height: 10vh;
   margin-bottom: 30px;
+  background-color: tomato;
 }
 
 .gallery-item {
   width: 80vw;
   text-align: center;
-  background-color: red;
-
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .gallery-item img {
   width: 100%;
   display: block;
   margin: auto;
+}
+
+@media only screen and (min-width: 600px) {
+
+
+
+  .gallery-item {
+    display: inline-block;
+    width: 40vw;
+    margin-left: 7vw;
+  }
+
+
+  /*.image-gallery {
+    display: block;
+    margin: auto;
+
+  }*/
+
+  /*.image-gallery::after {
+    content: "";
+    display: block;
+    clear: both;
+  }*/
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    height: 15vh;
+  }
+
+  .gallery-item {
+    width: 20vw;
+    margin-left: 10vw;
+  }
 }
