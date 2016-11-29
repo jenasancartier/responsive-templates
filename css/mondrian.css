@@ -17,9 +17,9 @@
   box-sizing: border-box;
 }
 
-/*body {
-  padding: 10%;
-}*/
+body {
+  background-color: black;
+}
 
 h1 {
   color: orange;
@@ -27,40 +27,68 @@ h1 {
 
 .navbar {
   height: 30vh;
+  background-color: darkred;
 }
 
 .content1 {
   height: 12vh;
   margin: 40px 0 40px;
+  background-color: lightgreen;
 }
 
 .content2 {
   height: 12vh;
   margin: 40px 0 40px;
+  background-color: darkgreen;
 }
 
 @media only screen and (min-width: 600px) {
 
+  body {
+    background-color: white;
+  }
+
   .navbar {
-    height: 50vh;
-    margin-bottom: 1vh;
+    height: 55vh;
+    margin-bottom: 15px;
 
   }
 
   .content1 {
-    height: 50vh;
+    height: 45vh;
     width: 48vw;
     float: left;
     margin: 0;
   }
 
   .content2 {
-    height: 50vh;
+    height: 45vh;
     width: 48vw;
     float: right;
     margin: 0;
 }
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 1220px),
+  (min-width: 500px) and (orientation: landscape) {
 
+  .navbar {
+    height: 100vh;
+    width: 65vw;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .content1 {
+    height: 49vh;
+    width: 33vw;
+    float: right;
+    margin-bottom: 1vh;
+  }
+
+  .content2 {
+    height: 49vh;
+    width: 33vw;
+    float: right;
+    margin-top: 1vh;
+  }
 }
