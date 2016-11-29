@@ -11,6 +11,56 @@
 
 /* End for testing */
 
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*body {
+  padding: 10%;
+}*/
+
 h1 {
-  color: blue;
+  color: orange;
+}
+
+.navbar {
+  height: 30vh;
+}
+
+.content1 {
+  height: 12vh;
+  margin: 40px 0 40px;
+}
+
+.content2 {
+  height: 12vh;
+  margin: 40px 0 40px;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .navbar {
+    height: 50vh;
+    margin-bottom: 1vh;
+
+  }
+
+  .content1 {
+    height: 50vh;
+    width: 48vw;
+    float: left;
+    margin: 0;
+  }
+
+  .content2 {
+    height: 50vh;
+    width: 48vw;
+    float: right;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1220px) {
+
 }
