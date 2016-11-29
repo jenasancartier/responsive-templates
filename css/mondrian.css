@@ -27,10 +27,12 @@ h1 {
   color: orange;
 }
 
+/*prevent landscape error/display break*/
 .container {
   width: 100vw;
   height: 100vh;
 }
+/*end*/
 
 .navbar {
   height: 30vh;
@@ -106,3 +108,4 @@ h1 {
   display: block;
   clear: both;
 }
+/*end*/
