@@ -18,5 +18,94 @@
 }
 
 h1 {
-  color: red;
+  font-size: 6vw;
+  margin-left: 4vw;
+  width: 90vw;
+}
+
+nav {
+  width: 60vw;
+  height: 3vh;
+  margin-top: 20px;
+
+}
+
+nav a {
+  color: black;
+  background-color: grey;
+  height: 100%;
+  width: 10vw;
+  /*padding-right: 20px;*/
+  margin-right: 10px;
+  padding: 5px 20px 5px;
+  display: inline-block;
+}
+
+.logo {
+  background-color: lightblue;
+  height: 3vh;
+  width: 45vw;
+}
+
+.feature-tile {
+  width: 100vw;
+  margin-bottom: 15px;
+}
+
+.feature-tile img {
+  width: 100%;
+  display: block;
+  margin: auto;
+
+}
+
+.feature-tile h3 {
+  text-align: left;
+  /*display: inline;*/
+}
+
+@media only screen and (min-width: 600px) {
+
+  nav {
+    padding: 0;
+    margin: 0;
+    width: 25vw;
+    height: 3vh;
+    display: inline;
+    margin-left: 20%;
+  }
+
+  nav a {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  h1 {
+    clear: left;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .feature-tile {
+    display: inline-block;
+    width: 40vw;
+    margin-left: 7vw;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+  .logo {
+    height: 5vh;
+  }
+  .feature-tile {
+    display: inline-block;
+    width: 20vw;
+    margin-left: 4vw;
+  }
 }
